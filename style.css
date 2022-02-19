@@ -12,7 +12,6 @@
 }
 body {
   background-color: #fafafa;
-  font-size: 1.4rem;
   font-weight: 400;
 }
 .f12 {
@@ -20,6 +19,10 @@ body {
   line-height: 1.5rem;
   color: #4f4f4f;
   margin-bottom: 2rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2,
@@ -41,6 +44,7 @@ h4 {
 }
 .container {
   margin: 2rem 1rem;
+  font-size: 1.4rem;
 }
 .bold {
   font-weight: 700;
@@ -148,7 +152,93 @@ aside div {
   align-items: center;
   margin-bottom: 2rem;
   column-gap: 0.5rem;
+  cursor: pointer;
 }
 .orange {
   color: #f2994a;
+}
+
+/* media for width 768px and above */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+  .container {
+    /* margin: auto; */
+    margin-right: 3rem;
+    margin-left: 3rem;
+    max-width: 969px;
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  .instructions h1 {
+    font-size: 2.4rem;
+  }
+  .f12 {
+    font-size: 1.4rem;
+    max-width: 59.2rem;
+    line-height: 1.7rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  footer {
+    font-size: 1.4rem;
+  }
+  main {
+    flex-direction: row-reverse;
+    margin-top: 4.8rem;
+    column-gap: 5rem;
+  }
+  aside {
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.2rem;
+    min-width: 21.6rem;
+    width: 21.6rem;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.2rem;
+    padding: 5.7rem 4.3rem 0 4.3rem;
+    height: fit-content;
+  }
+  aside p span:first-of-type {
+    font-size: 1rem;
+  }
+
+  aside p span:last-of-type {
+    font-size: 1.4rem;
+  }
+  aside .time {
+    flex-direction: column;
+    row-gap: 4.2rem;
+    align-items: flex-start;
+  }
+  aside div {
+    column-gap: 1.4rem;
+  }
+  .faded {
+    font-size: 1.6rem;
+  }
+  .hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 969px) {
+  .container {
+    max-width: 969px;
+    margin: auto;
+  }
+  main {
+    column-gap: 11rem;
+  }
 }
