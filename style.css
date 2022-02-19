@@ -3,6 +3,7 @@
 :root {
   font-size: 10px;
   font-family: "Montserrat", serif;
+  color: #333;
 }
 * {
   box-sizing: border-box;
@@ -11,6 +12,14 @@
 }
 body {
   background-color: #fafafa;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.f12 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #4f4f4f;
+  margin-bottom: 2rem;
 }
 h1,
 h2,
@@ -21,7 +30,125 @@ h4 {
 h4 {
   font-style: italic;
   font-weight: 400;
+  margin: 1.2rem 0;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-family: "Playfair Display", serif;
+}
+.italic {
+  font-weight: 500;
+  font-style: italic;
 }
 .container {
-  padding: 1rem;
+  padding: 2rem 1rem;
+}
+.bold {
+  font-weight: 700;
+}
+header > img {
+  width: 100%;
+}
+header > article > img {
+  padding: 1rem 0;
+}
+.container > header > article {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.2rem;
+}
+h1 {
+  font-size: 2.4rem;
+  margin: 1.2rem 0;
+}
+
+.ingredients article {
+  margin-bottom: 2rem;
+}
+
+.ingredients p {
+  display: flex;
+  column-gap: 0.8rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.ingredients input {
+  margin-top: 0.3rem;
+  min-width: 2.1rem;
+  height: 2.1rem;
+}
+.ingredients p > span {
+  margin-top: 0.2rem;
+}
+
+.instructions {
+  font-size: 1.6rem;
+}
+
+.instructions > div {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  margin-right: 0.8rem;
+}
+
+.instructions h1 {
+  min-width: 3.6rem;
+  height: 3.6rem;
+  background-color: #f2994a;
+  text-align: center;
+  color: white;
+  border-radius: 0.6rem;
+}
+.faded {
+  color: #bdbdbd;
+  margin-bottom: 13rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+footer {
+  text-align: center;
+}
+.underline {
+  text-decoration: underline;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* aside */
+.time {
+  justify-content: flex-start;
+  column-gap: 4rem;
+}
+aside {
+  margin-top: 2.4rem;
+}
+aside p span:first-of-type {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #bdbdbd;
+}
+
+aside p span:last-of-type {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+aside p {
+  display: flex;
+  flex-direction: column;
+}
+aside div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  column-gap: 0.5rem;
+}
+.orange {
+  color: #f2994a;
 }
